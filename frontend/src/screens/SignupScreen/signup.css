@@ -1,0 +1,14 @@
+.signup,
+.image {
+  min-height: 100vh;
+}
+.bg-image1 {
+  background-image: url("./signup.png") !important;
+  background-size: 100px 100px;
+  background-position: center center;
+  
+}
+.form-control {
+    background-color: whitesmoke;
+  }
+  
