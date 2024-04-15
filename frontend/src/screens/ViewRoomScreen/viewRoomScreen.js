@@ -1,7 +1,5 @@
 import React, { useEffect } from 'react'
-import { useDispatch, useSelector } from 'react-redux'
 import { Carousel, Row, Col, ListGroup } from 'react-bootstrap'
-import { getRoomDetails } from '../../actions/roomAction.js'
 import '../ViewRoomScreen/viewrooms.css'
 import Message from '../../components/Message'
 import Loader from '../../components/Loader'
@@ -12,17 +10,9 @@ Aos.refresh()
 
 const ViewRoomScreen = ({ match, history }) => {
 
-      const dispatch = useDispatch()
-
-      const roomDetails = useSelector((state) => state.roomDetails)
-      const { loading, error, rooms } = roomDetails
-
-      useEffect(() => {
-
-            dispatch(getRoomDetails(match.params.id))
-      }, [dispatch, match])
-
-
+      const loading=true; //fetching from backend
+      const error= null; //if backend returns error
+      const rooms={imageUrls:'......imagedummyurl',name:"glamkours",description:'sdfsf',features1:'sdfdsf',features2:'fsfd',features3:'sdfdsfds',features4:'sffd',features5:'sfsd'};
       return (
             <>
                   <div>
