@@ -12,6 +12,7 @@ import conferenceInsert from './screens/conferenceInsertScreen/conferenceInsert'
 import PackageList from './screens/AllPackage/packageTable';
 import ConferenceScreen from './screens/conferenceScreen/ConferenceScreen'
 import PackageScreen from './screens/PackagesScreen/packagesScreen';
+import RoomsListScreen from './screens/RoomsListScreen.js/roomsListScreen';
 
 const App = () => {
   return (
@@ -28,6 +29,7 @@ const App = () => {
         <Route path="/packageList" component={PackageList} />
         <Route path="/conference" component={ConferenceScreen} />
         <Route path="/packages" component={PackageScreen} />
+        <Route path="/listAllrooms" component={RoomsListScreen} />
       </div>
     </Router>
   );
