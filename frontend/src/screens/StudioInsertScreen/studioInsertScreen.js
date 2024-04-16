@@ -28,7 +28,7 @@ const StudioInsertScreen = ({ history }) => {
         setUploading(true);
 
         try {
-            const { data } = await axios.post('http://localhost:6500/api/uploads/image', formData);
+            const { data } = await axios.post('backend_url', formData);
             setImage(data);
             setUploading(false);
         } catch (error) {
