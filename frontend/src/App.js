@@ -11,6 +11,8 @@ import UserProfile from './screens/UserProfileScreen/userProfileScreen';
 import conferenceInsert from './screens/conferenceInsertScreen/conferenceInsert'
 import PackageList from './screens/AllPackage/packageTable';
 import ConferenceScreen from './screens/conferenceScreen/ConferenceScreen'
+import PackageScreen from './screens/PackagesScreen/packagesScreen';
+
 const App = () => {
   return (
     <Router>
@@ -25,6 +27,7 @@ const App = () => {
         <Route path="/conferenceInsert" component={conferenceInsert} />
         <Route path="/packageList" component={PackageList} />
         <Route path="/conference" component={ConferenceScreen} />
+        <Route path="/packages" component={PackageScreen} />
       </div>
     </Router>
   );
