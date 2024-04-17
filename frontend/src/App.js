@@ -13,6 +13,10 @@ import PackageList from './screens/AllPackage/packageTable';
 import ConferenceScreen from './screens/conferenceScreen/ConferenceScreen'
 import PackageScreen from './screens/PackagesScreen/packagesScreen';
 import RoomsListScreen from './screens/RoomsListScreen.js/roomsListScreen';
+import PackageManagement from './screens/PackageManagement/restManagement'
+import RoomUpdateScreen from './screens/RoomUpdateScreen/roomUpdateScreen';
+import ReqScreen from './screens/reqAProposalScreen/reqProInsert'
+import AllSkincares from './screens/SkincaresScreen/skincaresScreen';
 
 const App = () => {
   return (
@@ -30,6 +34,12 @@ const App = () => {
         <Route path="/conference" component={ConferenceScreen} />
         <Route path="/packages" component={PackageScreen} />
         <Route path="/listAllrooms" component={RoomsListScreen} />
+        <Route path="/packageManagement" component={PackageManagement} />
+        <Route path="/update/:id" component={RoomUpdateScreen} />
+        <Route path="/roomManagement" component={RoomManagementScreen} />
+        <Route path="/listAllRooms" component={RoomsListScreen} />
+        <Route path="/requestPropsal" component={ReqScreen} />
+        <Route path="/skincares" component={AllSkincares} />
       </div>
     </Router>
   );
