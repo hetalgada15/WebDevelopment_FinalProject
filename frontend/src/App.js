@@ -17,6 +17,8 @@ import PackageManagement from './screens/PackageManagement/restManagement'
 import RoomUpdateScreen from './screens/RoomUpdateScreen/roomUpdateScreen';
 import ReqScreen from './screens/reqAProposalScreen/reqProInsert'
 import AllSkincares from './screens/SkincaresScreen/skincaresScreen';
+import CreateRoomScreen from './screens/CreateRoomScreen.js/createRoomScreen';
+import SkincareUpdateScreen from './screens/SkincareUpdateScreen/SkincareUpdateScreen';
 
 const App = () => {
   return (
@@ -40,6 +42,8 @@ const App = () => {
         <Route path="/listAllRooms" component={RoomsListScreen} />
         <Route path="/requestPropsal" component={ReqScreen} />
         <Route path="/skincares" component={AllSkincares} />
+        <Route path="/admin/createRoom" component={CreateRoomScreen} />
+        <Route path="/skincareUpdate/:id" component={SkincareUpdateScreen} />
       </div>
     </Router>
   );
