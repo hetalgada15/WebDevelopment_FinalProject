@@ -29,6 +29,9 @@ import Nav1 from './components/Navbar/nav';
 import OrderScreen from './screens/OrderScreen/orderScreen'
 import OrderList from './screens/OrderListScreen/orderListScreen'
 import ReservationScreen from './screens/ReservationScreen/reservationScreen'
+import StudioListScreen from './screens/studioListScreen/studioListScreen'
+import StudEventMgtScreen from './screens/studioEventMgtScreen/studioEventMgtScreen'
+import GlamBookings from './screens/TableBookingListScreen/tableBookinglistScreen'
 const App = () => {
   return (
     <Router>
@@ -62,6 +65,9 @@ const App = () => {
         <Route path='/order/:id' component={OrderScreen} />
         <Route path='/orderList' component={OrderList} />
         <Route path='/bookNow/:id' component={ReservationScreen} />
+        <Route path='/glambookings' component={GlamBookings} />
+        <Route path='/studList' component={StudioListScreen} />
+        <Route path='/studEveMgt' component={StudEventMgtScreen} />
       </div>
     </Router>
   );
