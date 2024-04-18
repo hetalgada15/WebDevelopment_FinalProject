@@ -20,6 +20,7 @@ import AllSkincares from './screens/SkincaresScreen/skincaresScreen';
 import CreateRoomScreen from './screens/CreateRoomScreen.js/createRoomScreen';
 import SkincareUpdateScreen from './screens/SkincareUpdateScreen/SkincareUpdateScreen';
 import PackageUpdateScreen from './screens/PackageUpdateScreen/PackageUpdateScreen';
+import OrderListScreen from './screens/OrderListScreen/orderListScreen';
 import SkincareDetail from './screens/SkincareDetailScreen/skincareDetailScreen'
 import CartScreen from './screens/CartScreen/cartScreen'
 import ShippingScreen from './screens/ShippingScreen/shippingScreen'
@@ -32,6 +33,12 @@ import ReservationScreen from './screens/ReservationScreen/reservationScreen'
 import StudioListScreen from './screens/studioListScreen/studioListScreen'
 import StudEventMgtScreen from './screens/studioEventMgtScreen/studioEventMgtScreen'
 import GlamBookings from './screens/TableBookingListScreen/tableBookinglistScreen'
+import ConferenceListScreen from './screens/conferenceListScreen/conferenceListScreen';
+import ReservationReport from './screens/PackageTableBookingReport/ReservationReport';
+import BookingReportScreen from './screens/bookingReportScreen/bookingReportScreen';
+import Footer from './components/Footer/footer'
+import StudioListScreen from './screens/studioListScreen/studioListScreen';
+
 const App = () => {
   return (
     <Router>
@@ -56,7 +63,11 @@ const App = () => {
         <Route path="/skincares" component={AllSkincares} />
         <Route path="/admin/createRoom" component={CreateRoomScreen} />
         <Route path="/skincareUpdate/:id" component={SkincareUpdateScreen} />
+        <Route path="/packagemanagement/update/:id" component={PackageUpdateScreen}/>
         <Route path="/updatePackage/:id" component={PackageUpdateScreen}/>
+        <Route path="/updatePackage/:id" component={PackageUpdateScreen}/>
+        <Route path="/updatePackage/:id" component={PackageUpdateScreen}/>
+        <Route path='/orderList' component={OrderListScreen} />
         <Route path="/skincare/:id" component={SkincareDetail} />
         <Route path='/cart/:id?' component={CartScreen} />
         <Route path='/shipping' component={ShippingScreen} />
@@ -68,7 +79,13 @@ const App = () => {
         <Route path='/glambookings' component={GlamBookings} />
         <Route path='/studList' component={StudioListScreen} />
         <Route path='/studEveMgt' component={StudEventMgtScreen} />
+        <Route path='/conList' component={ConferenceListScreen} />
+        <Route path='/tableReservations' component={ReservationReport} />
+        <Route path="/bookingreport" component={BookingReportScreen} />
+        <Route path='/studList' component={StudioListScreen} />
+        
       </div>
+      <Footer/>
     </Router>
   );
 }
