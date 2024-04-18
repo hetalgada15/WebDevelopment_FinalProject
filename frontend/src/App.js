@@ -24,7 +24,11 @@ import SkincareDetail from './screens/SkincareDetailScreen/skincareDetailScreen'
 import CartScreen from './screens/CartScreen/cartScreen'
 import ShippingScreen from './screens/ShippingScreen/shippingScreen'
 import PaymentScreen from './screens/PaymentScreen/payementScreen'
-
+import PlaceOrder from './screens/PlaceOrderScreen/placeOrderScreen'
+import Nav1 from './components/Navbar/nav';
+import OrderScreen from './screens/OrderScreen/orderScreen'
+import OrderList from './screens/OrderListScreen/orderListScreen'
+import ReservationScreen from './screens/ReservationScreen/reservationScreen'
 const App = () => {
   return (
     <Router>
@@ -54,6 +58,10 @@ const App = () => {
         <Route path='/cart/:id?' component={CartScreen} />
         <Route path='/shipping' component={ShippingScreen} />
         <Route path='/payment' component={PaymentScreen} />
+        <Route path='/placeorder' component={PlaceOrder} />
+        <Route path='/order/:id' component={OrderScreen} />
+        <Route path='/orderList' component={OrderList} />
+        <Route path='/bookNow/:id' component={ReservationScreen} />
       </div>
     </Router>
   );
