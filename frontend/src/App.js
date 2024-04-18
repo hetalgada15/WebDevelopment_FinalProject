@@ -20,7 +20,10 @@ import AllSkincares from './screens/SkincaresScreen/skincaresScreen';
 import CreateRoomScreen from './screens/CreateRoomScreen.js/createRoomScreen';
 import SkincareUpdateScreen from './screens/SkincareUpdateScreen/SkincareUpdateScreen';
 import PackageUpdateScreen from './screens/PackageUpdateScreen/PackageUpdateScreen';
-
+import SkincareDetail from './screens/SkincareDetailScreen/skincareDetailScreen'
+import CartScreen from './screens/CartScreen/cartScreen'
+import ShippingScreen from './screens/ShippingScreen/shippingScreen'
+import PaymentScreen from './screens/PaymentScreen/payementScreen'
 
 const App = () => {
   return (
@@ -47,6 +50,10 @@ const App = () => {
         <Route path="/admin/createRoom" component={CreateRoomScreen} />
         <Route path="/skincareUpdate/:id" component={SkincareUpdateScreen} />
         <Route path="/updatePackage/:id" component={PackageUpdateScreen}/>
+        <Route path="/skincare/:id" component={SkincareDetail} />
+        <Route path='/cart/:id?' component={CartScreen} />
+        <Route path='/shipping' component={ShippingScreen} />
+        <Route path='/payment' component={PaymentScreen} />
       </div>
     </Router>
   );
