@@ -25,6 +25,9 @@ import SkincareDetail from './screens/SkincareDetailScreen/skincareDetailScreen'
 import CartScreen from './screens/CartScreen/cartScreen'
 import ShippingScreen from './screens/ShippingScreen/shippingScreen'
 import PaymentScreen from './screens/PaymentScreen/payementScreen'
+import ConferenceListScreen from './screens/conferenceListScreen/conferenceListScreen';
+import ReservationReport from './screens/PackageTableBookingReport/ReservationReport';
+import BookingReportScreen from './screens/bookingReportScreen/bookingReportScreen';
 
 
 const App = () => {
@@ -60,6 +63,9 @@ const App = () => {
         <Route path='/cart/:id?' component={CartScreen} />
         <Route path='/shipping' component={ShippingScreen} />
         <Route path='/payment' component={PaymentScreen} />
+        <Route path='/conList' component={ConferenceListScreen} />
+        <Route path='/tableReservations' component={ReservationReport} />
+        <Route path="/bookingreport" component={BookingReportScreen} />
       </div>
     </Router>
   );
