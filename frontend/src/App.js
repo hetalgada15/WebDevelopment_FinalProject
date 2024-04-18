@@ -38,7 +38,7 @@ const App = () => {
         <Route path="/profile" component={UserProfile} />
         <Route path="/rooms" component={RoomsScreen} />
         <Route path="/studioInsert" component={StudioInsertScreen} />
-        <Route path="/conferenceInsert" component={conferenceInsert} />       
+        <Route path="/conferenceInsert" component={conferenceInsert} />
         <Route path="/packageList" component={PackageList} />
         <Route path="/conference" component={ConferenceScreen} />
         <Route path="/packages" component={PackageScreen} />
@@ -51,7 +51,10 @@ const App = () => {
         <Route path="/skincares" component={AllSkincares} />
         <Route path="/admin/createRoom" component={CreateRoomScreen} />
         <Route path="/skincareUpdate/:id" component={SkincareUpdateScreen} />
-        <Route path="/updatePackage/:id" component={PackageUpdateScreen}/
+        <Route path="/packagemanagement/update/:id" component={PackageUpdateScreen}/>
+        <Route path="/updatePackage/:id" component={PackageUpdateScreen}/>
+        <Route path="/updatePackage/:id" component={PackageUpdateScreen}/>
+        <Route path="/updatePackage/:id" component={PackageUpdateScreen}/>
         <Route path='/orderList' component={OrderListScreen} />
         <Route path="/skincare/:id" component={SkincareDetail} />
         <Route path='/cart/:id?' component={CartScreen} />
