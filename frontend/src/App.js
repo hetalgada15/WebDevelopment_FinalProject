@@ -28,7 +28,8 @@ import PaymentScreen from './screens/PaymentScreen/payementScreen'
 import ConferenceListScreen from './screens/conferenceListScreen/conferenceListScreen';
 import ReservationReport from './screens/PackageTableBookingReport/ReservationReport';
 import BookingReportScreen from './screens/bookingReportScreen/bookingReportScreen';
-
+import Footer from './components/Footer/footer'
+import StudioListScreen from './screens/studioListScreen/studioListScreen';
 
 const App = () => {
   return (
@@ -66,7 +67,10 @@ const App = () => {
         <Route path='/conList' component={ConferenceListScreen} />
         <Route path='/tableReservations' component={ReservationReport} />
         <Route path="/bookingreport" component={BookingReportScreen} />
+        <Route path='/studList' component={StudioListScreen} />
+        
       </div>
+      <Footer/>
     </Router>
   );
 }
