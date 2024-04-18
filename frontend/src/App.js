@@ -20,8 +20,6 @@ import AllSkincares from './screens/SkincaresScreen/skincaresScreen';
 import CreateRoomScreen from './screens/CreateRoomScreen.js/createRoomScreen';
 import SkincareUpdateScreen from './screens/SkincareUpdateScreen/SkincareUpdateScreen';
 import PackageUpdateScreen from './screens/PackageUpdateScreen/PackageUpdateScreen';
-import OrderListScreen from './screens/OrderListScreen/orderListScreen';
-
 
 
 const App = () => {
@@ -49,7 +47,6 @@ const App = () => {
         <Route path="/admin/createRoom" component={CreateRoomScreen} />
         <Route path="/skincareUpdate/:id" component={SkincareUpdateScreen} />
         <Route path="/updatePackage/:id" component={PackageUpdateScreen}/>
-        <Route path='/orderList' component={OrderListScreen} />
       </div>
     </Router>
   );
