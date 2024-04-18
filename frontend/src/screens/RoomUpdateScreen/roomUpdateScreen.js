@@ -228,7 +228,7 @@ const RoomUpdateScreen = ({ match, history }) => {
                                                 ></Form.Control>
                                           </Form.Group>
                                           <Form.Group controlId='description'>
-                                                <Form.Label>Descrition</Form.Label>
+                                                <Form.Label>Description</Form.Label>
                                                 <Form.Control
                                                       type='text'
                                                       placeholder='Enter price'
@@ -236,54 +236,35 @@ const RoomUpdateScreen = ({ match, history }) => {
                                                       onChange={(e) => setDescription(e.target.value)}
                                                 ></Form.Control>
                                           </Form.Group>
-                                          <Form.Group controlId='image'>
-                                                <Form.Label>Image</Form.Label>
-                                                <Form.Control
-                                                      type='text'
-                                                      placeholder='Enter Image url'
-                                                      value={imageUrl1}
-                                                      onChange={(e) => setImageurl1(e.target.value)}
-                                                ></Form.Control>
-                                                <Form.File
-                                                      id='image-file'
-                                                      label='Choose File'
-                                                      custom
-                                                      onChange={uploadFileHandler1}
-                                                ></Form.File>
-                                                {uploading && <Loader />}
-                                          </Form.Group>
-                                          <Form.Group controlId='image'>
-                                                <Form.Label>Image</Form.Label>
-                                                <Form.Control
-                                                      type='text'
-                                                      placeholder='Enter Image url'
-                                                      value={imageUrl2}
-                                                      onChange={(e) => setImageurl2(e.target.value)}
-                                                ></Form.Control>
-                                                <Form.File
-                                                      id='image-file'
-                                                      label='Choose File'
-                                                      custom
-                                                      onChange={uploadFileHandler2}
-                                                ></Form.File>
-                                                {uploading && <Loader />}
-                                          </Form.Group>
-                                          <Form.Group controlId='image'>
-                                                <Form.Label>Image</Form.Label>
-                                                <Form.Control
-                                                      type='text'
-                                                      placeholder='Enter Image url'
-                                                      value={imageUrl3}
-                                                      onChange={(e) => setImageurl3(e.target.value)}
-                                                ></Form.Control>
-                                                <Form.File
-                                                      id='image-file'
-                                                      label='Choose File'
-                                                      custom
-                                                      onChange={uploadFileHandler3}
-                                                ></Form.File>
-                                                {uploading && <Loader />}
-                                          </Form.Group>
+                                          <Form.Group controlId='image1'>
+                                    <Form.Label>Image 1 URL</Form.Label>
+                                    <Form.Control
+                                    type='text'
+                                    placeholder='Enter Image 1 URL'
+                                    value={imageUrl1}
+                                    onChange={(e) => setImageurl1(e.target.value)}
+                                    />
+                                    </Form.Group>
+
+                                    <Form.Group controlId='image2'>
+                                    <Form.Label>Image 2 URL</Form.Label>
+                                    <Form.Control
+                                    type='text'
+                                    placeholder='Enter Image 2 URL'
+                                    value={imageUrl2}
+                                    onChange={(e) => setImageurl2(e.target.value)}
+                                    />
+                                    </Form.Group>
+
+                                    <Form.Group controlId='image3'>
+                                    <Form.Label>Image 3 URL</Form.Label>
+                                    <Form.Control
+                                    type='text'
+                                    placeholder='Enter Image 3 URL'
+                                    value={imageUrl3}
+                                    onChange={(e) => setImageurl3(e.target.value)}
+                                    />
+                                    </Form.Group>
 
                                           <center>
                                                 <Button style={{ width: "200px" }} type='submit' variant='warning'>
