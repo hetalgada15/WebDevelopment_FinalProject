@@ -25,6 +25,14 @@ import SkincareDetail from './screens/SkincareDetailScreen/skincareDetailScreen'
 import CartScreen from './screens/CartScreen/cartScreen'
 import ShippingScreen from './screens/ShippingScreen/shippingScreen'
 import PaymentScreen from './screens/PaymentScreen/payementScreen'
+import PlaceOrder from './screens/PlaceOrderScreen/placeOrderScreen'
+import Nav1 from './components/Navbar/nav';
+import OrderScreen from './screens/OrderScreen/orderScreen'
+import OrderList from './screens/OrderListScreen/orderListScreen'
+import ReservationScreen from './screens/ReservationScreen/reservationScreen'
+import StudioListScreen from './screens/studioListScreen/studioListScreen'
+import StudEventMgtScreen from './screens/studioEventMgtScreen/studioEventMgtScreen'
+import GlamBookings from './screens/TableBookingListScreen/tableBookinglistScreen'
 import ConferenceListScreen from './screens/conferenceListScreen/conferenceListScreen';
 import ReservationReport from './screens/PackageTableBookingReport/ReservationReport';
 import BookingReportScreen from './screens/bookingReportScreen/bookingReportScreen';
@@ -64,6 +72,13 @@ const App = () => {
         <Route path='/cart/:id?' component={CartScreen} />
         <Route path='/shipping' component={ShippingScreen} />
         <Route path='/payment' component={PaymentScreen} />
+        <Route path='/placeorder' component={PlaceOrder} />
+        <Route path='/order/:id' component={OrderScreen} />
+        <Route path='/orderList' component={OrderList} />
+        <Route path='/bookNow/:id' component={ReservationScreen} />
+        <Route path='/glambookings' component={GlamBookings} />
+        <Route path='/studList' component={StudioListScreen} />
+        <Route path='/studEveMgt' component={StudEventMgtScreen} />
         <Route path='/conList' component={ConferenceListScreen} />
         <Route path='/tableReservations' component={ReservationReport} />
         <Route path="/bookingreport" component={BookingReportScreen} />
