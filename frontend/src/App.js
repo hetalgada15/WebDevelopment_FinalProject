@@ -54,6 +54,7 @@ const App = () => {
         <Route path="/packagemanagement/update/:id" component={PackageUpdateScreen}/>
         <Route path="/updatePackage/:id" component={PackageUpdateScreen}/>
         <Route path="/updatePackage/:id" component={PackageUpdateScreen}/>
+        <Route path="/updatePackage/:id" component={PackageUpdateScreen}/>
         <Route path='/orderList' component={OrderListScreen} />
         <Route path="/skincare/:id" component={SkincareDetail} />
         <Route path='/cart/:id?' component={CartScreen} />
