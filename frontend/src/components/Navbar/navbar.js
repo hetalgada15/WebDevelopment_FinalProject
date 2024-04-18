@@ -1,12 +1,28 @@
 import React from "react";
+import { logout } from "../../actions/userAction.js";
+import { useDispatch, useSelector } from "react-redux";
 import { LinkContainer } from "react-router-bootstrap";
 import { Nav, NavDropdown } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import logo from "../Navbar/tipton-logo.png";
 import "../Navbar/nav.css";
+import Swal from "sweetalert2";
 
 const Navbar = (history) => {
-const userInfo={name:"Username", isAdmin:true};
+  const dispatch = useDispatch();
+
+  const userLogin = useSelector((state) => state.userLogin);
+  const { userInfo } = userLogin;
+
+  const logoutHandler = () => {
+    dispatch(logout());
+    Swal.fire("Successful", "Successfully Logged Out ", "success").then(
+      (result) => {
+        window.location.href = "/login";
+      }
+    );
+  };
+
   return (
     <nav class="navbar navbar-expand-lg navbar-dark py-3 header">
       <div class="container-fluid">
@@ -48,7 +64,7 @@ const userInfo={name:"Username", isAdmin:true};
                   </NavDropdown.Item>
                 </LinkContainer>
 
-                <NavDropdown.Item onClick={console.log("login-screen")}>
+                <NavDropdown.Item onClick={logoutHandler}>
                   <li className="link">Logout</li>
                 </NavDropdown.Item>
               </NavDropdown>

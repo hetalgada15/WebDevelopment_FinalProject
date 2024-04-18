@@ -2,6 +2,9 @@ import React from 'react'
 import { Container } from 'react-bootstrap';
 import { Tabs } from "antd";
 import { Button, Row, Col } from 'react-bootstrap'
+import UserRoomBookings from '../UserRoomBookings/userRoomBookings';
+import UserTableReservations from '../UserTableReservations/UserTableReservations';
+import UserSkincareOrders from '../UserSkincareOrders/UserSkincareOrders';
 
 const { TabPane } = Tabs;
 
@@ -30,13 +33,13 @@ const UserProfile = () => {
                                     <TabPane tab="Therapy room bookings" key="2">
                                           <div className="row">
 
-                                              <p>usrroombookings</p>
+                                                <UserRoomBookings />
                                           </div>
                                     </TabPane>
                                     <TabPane tab="Package Bookings" key="3">
 
                                           <div className="row">
-                                               <p> User Table reservations screen</p>
+                                                <UserTableReservations />
                                           </div>
 
                                     </TabPane>
@@ -50,7 +53,7 @@ const UserProfile = () => {
                                     <TabPane tab="Online Order Status" key="5">
 
                                           <div className="row">
-                                              <p> User skin care orders screen</p>
+                                                <UserSkincareOrders />
                                           </div>
 
                                     </TabPane>
