@@ -1,4 +1,4 @@
-# Glamour
+# Glamour Website
 
 The **Glamour Project** is a full-stack web application built with the **MERN** stack (MongoDB, Express, React, Node.js) and leverages **Redux** for state management. This application allows users to manage skincare products through a comprehensive interface, enabling operations such as adding, viewing, updating, and deleting products. With centralized state management through Redux, the app ensures efficient communication between frontend and backend, providing a smooth user experience.
 
